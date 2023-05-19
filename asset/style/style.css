@@ -1,0 +1,648 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    color: #4D002C;
+    font-size: 62.5%
+}
+
+/* html page */
+header {
+    background-color: rgba(185, 40, 122,0.5);
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    padding: 1.2rem 6.2rem; 
+    width: 100%;
+}
+nav {
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+    width: 55%;
+}
+nav ul {
+     display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 2.5rem;
+}
+nav ul a {
+    text-decoration: none;
+    color: #4D002C;
+}
+nav ul a:hover {
+    color: white;
+}
+.logo_container {
+    align-items: center;
+    background-color: white;
+    border: #B9287A 3px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 8rem;
+}
+.logo {
+    height: 5rem;
+    margin-right: 0.5rem;
+    width: 5rem; 
+    animation: 10s alternate infinite rotar;
+}  
+
+main{
+    height: auto;
+    width: 100%;
+}
+
+.presentation_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.presentation_container h1 {
+    font-size: 4rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+.presentation_container p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.presentation_container img {
+    height: 43rem;
+    object-fit: cover;
+    width: 90%;
+}
+.information_home {
+    align-items: center;
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    padding: 15rem;
+    width: 100%;
+}
+.information_home p{
+    font-size: 2rem;
+    text-align: justify;
+    padding: 1.5rem;
+    width: 50% ; 
+}
+.information_home img{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px 0px;
+    height: 25rem;
+    margin-left: 4rem;
+    object-fit: cover;
+    width: 25rem;
+}
+
+/* aboutUs page */
+.aboutUs_sections {
+    display: flex;
+    flex-direction: column;
+}
+.aboutUs__presentation {
+   text-align: center;
+}
+.aboutUs__presentation h2 {
+    font-size: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+.aboutUs__presentation p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.aboutUs__info {
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px 0px;
+    display: flex;
+    justify-content:center;
+    margin-top: 3rem;
+    width: 80%;
+}
+.aboutUs__info p {
+   font-size: 2.5rem;
+   width: 50%;
+}
+.aboutUs__info img {
+    border: 3px solid #B9287A;
+    height: 20rem;
+    margin-right: 8rem;
+    object-fit: cover;
+    width: 25rem;
+ }
+ .aboutUs__footer{
+    margin-top: 6rem;
+ }
+
+ /* contact page */
+ .contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+ .contact h2 {
+    font-size: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+ }
+.contact p {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+}
+.contact img {
+    border: 3px solid #B9287A;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px 0px;
+    height: 40rem;
+    margin-bottom: 8rem;
+    object-fit: cover;
+    width: 54rem;
+} 
+.horario {
+    padding:  0 30rem ;
+   
+}
+.contact__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 48%;
+    
+}
+
+.contact__info a {
+    color: #4D002C;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 3rem;
+   
+}
+.contact__info a:hover {
+    color: #B9287A;
+}
+
+ /* Information page */
+.informatio__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.informatio__main h2 {
+    font-size: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+ }
+.informatio__main p {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+}
+.informatio__main table {
+    border: #B9287A;
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 70%;
+}
+.informatio__main caption {
+    margin-bottom: 3rem;
+    text-align: left;
+    text-decoration:overline;
+}
+.informatio__main table,tr,th,td {
+    border: #B9287A solid 1px;
+    border-collapse: collapse;
+}
+td {
+    padding: 0.8rem 0;
+    width: 33%;
+}
+
+/* benefitsTips page */
+.tips__main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.tips__main h2 {
+    font-size: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+ }
+.tips__main p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.tips__container__cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.tips__card {
+    align-items: center;
+    display: flex;
+    height: 30rem;
+    justify-content:flex-start;
+    width: 90%;
+}
+.tips__card img {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px 0px;
+    height: 25rem;
+    margin-right: 8rem;
+    object-fit: cover;
+    width: 25rem;
+ }
+ .tips__card ol  {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    list-style-type: none;
+    margin-top: 8rem;
+    
+ }
+ .olUno::marker {
+    content: '1. ';
+}
+.olDos::marker {
+    content: '2. ';
+}
+.tips__card ul  {
+   font-size: 2.5rem;
+   list-style-position: inside;
+   list-style-type: disc;
+   margin-bottom: 12rem;
+}
+
+.tips__card ul li::marker {
+    color: #B9287A;
+}
+
+/* Raffle page */
+.raffle__main {
+    align-items: center;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+}
+.raffle__main h2{
+    font-size: 5rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+.raffle__main P {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+}
+.info__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.info__container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info__container section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+iframe {
+    height: 90%;
+    width: 100%;
+}
+
+.info__container form {
+    align-items: flex-start;
+    background-image: url('../img/descarga.png');
+    background-size: 3rem 3rem;
+    border: 0.2rem solid #B9287A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 40%;
+}
+.info__container fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.data__container label,  .message__container label, .select__container label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    margin-top: 0.8rem;
+}
+.data__container input::placeholder {
+    color: #B9287A;
+    padding-left:2rem ;
+    opacity: 0.5;
+}
+.select__container select{
+    color: #B9287A;
+}
+.select__container option {
+    color: #B9287A;
+}
+.payment__container {
+    margin-top: 0.8rem;
+    padding-left: 1.6rem;
+}
+
+.payment__container div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+#titlePyOpt{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.payment__container label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 0.8rem;
+}
+
+.check__radio {
+    accent-color: #B9287A;
+}
+
+.radio1 {
+    margin-top: 0.8rem;
+}
+.message__container textarea {
+    padding-left:2rem;
+    padding-top: 1rem;
+}
+.message__container textarea::placeholder {
+    color: #B9287A;
+    padding-left:2rem;
+    padding-top: 1rem;
+    opacity: 0.5;
+}
+#confirmation__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    
+}
+#confirmation__container div {
+    align-items: center;
+    display: flex;
+   
+    padding-left:1.4rem ;
+
+}
+#confirmation__container div label {
+    font-size: 1.2rem;  
+    margin-left: 1rem;
+    
+}
+#send {
+    background-color: #B9287A;
+    color: white;
+    font-weight: bold;
+    width: 7rem;
+}
+
+ footer {
+    background-color: #B9287A;
+    color: white;
+    font-size: 1.4rem;
+    height: 10rem;
+    text-align: center;
+    padding-top: 4.2rem;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+    header {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 28rem;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+        padding-left: 2rem; 
+    }
+    nav ul li  {
+        border-bottom: white 0.1rem solid;
+        border-top: white 0.1rem solid;
+        margin-bottom: 0.5rem;
+        
+    }
+    .presentation_container{
+        margin-bottom: 5rem;
+    }
+
+    .presentation_container img {
+        height: 20rem;
+        object-fit: cover;
+        width: 90%;
+    }
+    .information_home {
+        height: 48rem;
+        flex-direction: column-reverse;
+        margin-bottom: 4rem;
+    }
+    .information_home p {
+        height: 20rem;
+        text-align: center;
+        padding: 0;
+        width: 30rem;
+    }
+    .information_home img {
+        margin-left: 0;
+        height: 28rem;
+        width: 28rem;
+        margin-bottom: 5rem;
+    }
+    /* aboutUs page */
+    .aboutUs__info {
+        box-shadow: none;
+        flex-direction: column;
+       
+    }
+    .aboutUs__info img {
+        margin-right: 0;
+    }
+    .aboutUs__info p {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+        width: 90%;
+    }
+    .mobile_bottom {
+        margin-bottom: 2rem;
+    }
+
+    /* contact page */
+    .contact p {
+        margin-bottom: 1rem;
+    }
+    .contact img {
+        height: 34rem;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        width: 34rem;
+    }
+    .horario {
+        text-align: start;
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
+    .contact__info {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+        padding: 0;
+        width: 90%;
+    }
+    .contact__info a {
+        margin-bottom: 0;
+    }
+
+     /* Information page */
+    .informatio__main h2 {
+        font-size: 4rem;
+    }
+    .informatio__main p {
+        text-align: center;
+    }
+    .informatio__main table {
+        font-size: 2rem;
+    }
+
+    /* benefitsTips page */
+    .tips__main h2 {
+        font-size: 4rem;
+    }
+    .tips__card {
+        flex-direction: column;
+        height: auto;
+    }
+    .tips__card img {
+        box-shadow: none;
+        margin-right: 0;
+        width: 36rem;
+    }
+    .tips__card ol {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-top: 3rem;
+    }
+    .tips__card ul {
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+    }
+    .listTwoMobile {
+        margin-left: 2rem;
+    }
+    
+    /* Raffle page */
+    .raffle__main h2 {
+        margin-bottom: 0.5rem;
+    }
+    .raffle__main P {
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    .info__container {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .info__container form {
+        border: none;
+        width: 100%;
+  
+    }
+    #confirmation__container {
+        flex-direction: column;
+    } 
+    #send {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .info__container section {
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .info__container section h3 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+    iframe {
+        height: 60%;
+        width: 80%;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: 28rem;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+        padding-left: 2rem; 
+    }
+    nav ul li  {
+        border-bottom: white 0.1rem solid;
+        border-top: white 0.1rem solid;
+        margin-bottom: 0.5rem;
+        
+    }
+}
+
+@keyframes rotar {
+    5% { transform: rotate(90deg);}
+    20% { transform: scale(1); }
+    30% { transform: scale(1.5); }
+    40% { transform: scale(1.5); }
+    50% { transform: rotate(-90deg) scale(1.5);}
+    60% { transform: scale(1.5);}
+    100% { transform: scale(1);}
+}
